@@ -1,72 +1,87 @@
 // Ex 01 calculadora simples
-// let n1 = 20;
-// let n2 = 30;
-
-// let operacao = prompt("Digite a operação que deseja (+ , - , * , / )");
-
-// if(operacao === "+"){
-//     let soma = n1 + n2
-//     console.log(soma);
-// }else if(operacao === "-"){
-//     let sub = n1 - n2
-//     console.log(sub);
-// }else if(operacao === "/"){
-//     let Div = n1 / n2
-//     console.log(Div);
-// }else if (operacao === "*"){
-//     let multi = n1 * n2
-//     console.log(multi);
-// }else{
-//     console.log("Operação inválida")
+// function calculadora(n1 , n2){
+   
+//     let operacao = prompt("Digite a operação que deseja (+ , - , * , / )");
+    
+//     if(operacao === "+"){
+//         let soma = n1 + n2
+//         console.log(soma);
+//     }else if(operacao === "-"){
+//         let sub = n1 - n2
+//         console.log(sub);
+//     }else if(operacao === "/"){
+//         let Div = n1 / n2
+//         console.log(Div);
+//     }else if (operacao === "*"){
+//         let multi = n1 * n2
+//         console.log(multi);
+//     }else{
+//         console.log("Operação inválida")
+//     }
 // }
+// calculadora(30, 10)
+
 // ------------------------------------------
 
 // Ex 02 Resto da Divisão
-
-// let number = Number(prompt("Digite um numero: "));
-
-// if(number % 2 == 0){
-//     console.log("Par");
-// }else{
-//     console.log("Ímpar")
+// function restoDivisao(){
+//     let number = Number(prompt("Digite um numero: "));
+    
+//     if(number % 2 == 0){
+//         console.log("Par");
+//     }else{
+//         console.log("Ímpar")
+//     }
 // }
+
+// restoDivisao()
 // -----------------------------------------------
 // Ex 03
-// let quadrado = number ** 2;
-// let cubo =  number ** 3;
+// function potencia(){
+//     let quadrado = number ** 2;
+//     let cubo =  number ** 3;
+    
+//     console.log("Quadrado: ", quadrado);
+//     console.log("Cubo: ", cubo);
+// }
 
-// console.log("Quadrado: ", quadrado);
-// console.log("Cubo: ", cubo);
+// // ------------------------------------------------
 
-// ------------------------------------------------
+// // Ex 04
+// function conversao(){
 
-// Ex 04
+//     let C = 25;
+//     let F = (C * 9/5) + 32;
+    
+//     console.log(F);
+// }
+// conversao();
 
-// let C = 25;
-// let F = (C * 9/5) + 32;
+// // -------------------------------------------------
 
-// console.log(F)
-
-// -------------------------------------------------
-
-//  Ex 05
-// let nota1 = 6.5;
-// let nota2 = 8;
-// let nota3 = 5;
-
-// media = (nota1 + nota2 + nota3) / 3;
-
-// console.log(media.toFixed(2));
+// //  Ex 05
+// function media(){
+//     let nota1 = 6.5;
+//     let nota2 = 8;
+//     let nota3 = 5;
+    
+//     resultado = (nota1 + nota2 + nota3) / 3;
+    
+//     console.log(resultado.toFixed(2));
+// }
+// media()
 // -----------------------------------------------
 
 // Ex 06
+// function compras(valorCompra, valorPago){
+    
+    
+//     valorTroco = (valorPago - valorCompra);
+    
+//     console.log(` Seu troco é: ${valorTroco}`);
 
-// let valorCompra = 50;
-// let valorPago = 70;
-
-// valorTroco = (valorPago - valorCompra);
-
-// console.log(` Seu troco é: ${valorTroco}`);
+// }
+// compras(100 , 145);
 // -------------------------------------------------
 
 // Ex 07
@@ -163,7 +178,7 @@
 // }else{
 //     console.log("Acesso inválido");
 // }
-// ----------------------------------------------------
+// --------------------------------------------------
 
 // Ex 15
 // let bool = false;
@@ -223,50 +238,59 @@
 // -------------------------------------------------------------------------
 
 // Ex 20
-// let nota = 10;
+// function media(nota){
+    
+//     if(nota < 5){
+//         console.log("Reprovado")
+//     }else if(nota < 7 && nota >= 5){
+//         console.log("Recuperação")
+//     }else if(nota <= 8 && nota >= 7){
+//         console.log("Aprovado")
+//     }else if( nota >= 9){
+//         console.log("Excelente")
+//     }else{
+//         console.log("Nota inválida")
 
-// if(nota < 5){
-//     console.log("Reprovado")
-// }else if(nota < 7 && nota >= 5){
-//     console.log("Recuperação")
-// }else if(nota <= 8 && nota >= 7){
-//     console.log("Aprovado")
-// }else if( nota >= 9){
-//     console.log("Excelente")
-// }else{
-//     console.log("Nota inválida")
+// }
+// media(7)
+
 // }
 // ---------------------------------------------------------
 
 // Ex 21
-
-// let peso = 88;
-// let altura = 1.75;
-
-// let imc = peso / (altura * altura);
-
-// console.log("Seu IMC é:", imc.toFixed(2));
-
-// if (imc < 18.5) {
-//     console.log("Abaixo do peso");
-// } else if (imc < 25) {
-//     console.log("Peso normal");
-// } else if (imc < 30) {
-//     console.log("Sobrepeso");
-// } else {
-//     console.log("Obesidade");
+// function imcResultado(peso , altura){
+   
+    
+//     let imc = peso / (altura * altura);
+    
+//     console.log("Seu IMC é:", imc.toFixed(2));
+    
+//     if (imc < 18.5) {
+//         console.log("Abaixo do peso");
+//     } else if (imc < 25) {
+//         console.log("Peso normal");
+//     } else if (imc < 30) {
+//         console.log("Sobrepeso");
+//     } else {
+//         console.log("Obesidade");
+//     }
 // }
+
+// imcResultado(88 , 1.73)
 // ---------------------------------------------------------------
 
 // EX 22
+// function jogoPalpite(){
+//     let numeroFixo = 44;
+//     let palpite = Number(prompt("De um palpite de um numero: "))    
 
-let numeroFixo = 44;
-let palpite = Number(prompt("De um palpite de um numero: "))
+//     if(palpite === numeroFixo){
+//         console.log("Você Acertou na mosca!! ")
+//     }else if(palpite > numeroFixo){
+//            console.log("Você chutou alto, chute um pouco  menos")
+//     }else{
+//         console.log("Você chutou muito baixo, chute um pouco mais")
+//     }
+// }
 
-if(palpite === numeroFixo){
-    console.log("Você Acertou na mosca!! ")
-}else if(palpite > numeroFixo){
-       console.log("Você chutou alto, chute um pouco  menos")
-}else{
-    console.log("Você chutou muito baixo, chute um pouco mais")
-}
+// jogoPalpite()
