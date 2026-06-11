@@ -253,7 +253,7 @@ Classificação:
 | 2 | Suspeita |
 | 3 ou 4 | Cúmplice |
 | 5 | Assassino |
-| Caso contrário | Inocente |
+| Caso  contrário| Inocente |
 
 ---
 
@@ -270,8 +270,8 @@ Você consegue criar mais de uma solução?
 
 ---
 
-## 23. Par ou ímpar em C
-Escreva um programa em C que receba um número inteiro e diga se ele é par ou ímpar.
+## 23. Par ou ímpar em 
+Escreva um programa em  que receba um número inteiro e diga se ele é par ou ímpar.
 
 > Dica: utilize o operador `%`.
 

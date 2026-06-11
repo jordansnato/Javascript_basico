@@ -4,7 +4,7 @@
 // let n2 = Number(prompt("digite um outro numero: "))
 
 // if(n1 > n2){
-//     alert(`${n1} é o maior`)
+// alert(`${n1} é o maior`)
 // }else{
 //     alert(`${n2} é o maior`)
 // }
@@ -49,7 +49,7 @@
 
 // if(media === 10){
 //     alert("Aprovado com distinção")
-// }else if(media ){
+// }else if(media >= 7){
 //     alert("aprovado")
 // }else{
 //     alert("Reprovado")
@@ -70,7 +70,7 @@
 
 // EX 07
 // let n1 = 8
-// let n2 = 6
+// let n2 = 9
 // let n3 = 7
 
 // if(n1 > n2 && n1 > n3 && n2 > n3){
@@ -100,15 +100,15 @@
 // let n2 = Number(prompt("Digite um numero:"))
 // let n3 = Number(prompt("Digite um numero:"))
 
-// if(n1 > n2 && n2 > n3){
+// if(n1 >= n2 && n2 >= n3){
 //     alert(`${n1}, ${n2}, ${n3}`)
-// }else if(n1 > n3 && n3 > n2){
+// }else if(n1 >= n3 && n3 >= n2){
 //     alert(`${n1}, ${n3}, ${n2}`)
-// }else if(n2 > n1 && n1 > n3){
+// }else if(n2 >= n1 && n1 >= n3){
 //     alert(`${n2}, ${n1}, ${n3}`)
-// }else if(n2 > n3 && n3 > n1){
+// }else if(n2 >= n3 && n3 >= n1){
 //     alert(`${n2}, ${n3}, ${n1}`)
-// }else if(n3 > n1 && n1 > n2){
+// }else if(n3 >= n1 && n1 >= n2){
 //     alert(`${n3}, ${n1}, ${n2}`)
 // }else{
 //     alert(`${n3}, ${n2}, ${n1}`)
@@ -207,7 +207,7 @@
 //     case 7: alert(`${dia} | Sábado`)
 //     break;
 //     default: alert("Valor inválido")
-    
+
 // }
 
 // EX 14
@@ -248,6 +248,156 @@
 // fazer em sala
 
 // EX 16
-//  fazer em sala
+// let a = Number(prompt("Digite o valor A:"))
+// let b = Number(prompt("Digite  valor de B:"))
+// let c = Number(prompt("Digite o valor de C:"))
+
+// if(a === 0){
+//     alert("A equação não é segundo grau")
+// }else{
+//     a ** 2  - 4 * a * c
+
+//     if(delta < 0){
+//         console.log("A equação não possui raízes reais.");
+//     }else if (delta === 0) {
+//         const x = -b / (2 * a);
+//         console.log(`A equação possui uma raiz real: x = ${x}`);
+//     } else {
+//         const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+//         const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+//         console.log("A equação possui duas raízes reais:");
+//         console.log(`x1 = ${x1}`);
+//         console.log(`x2 = ${x2}`);
+//     }
+// }
 
 // EX 17
+
+/*É divisível por 4 e
+Não é divisível por 100, ou
+É divisível por 400.
+*/
+
+// let ano = Number(prompt("qual ano deseja verificar:"))
+
+// if(ano % 4 === 0 && ano % 100 !== 0 || ano / 400 === 0){
+//     alert(`${ano} é Bisexto`)
+// }else{
+//     alert(`${ano} não é Bisexto`)
+// }
+
+// EX 18
+
+// let numberInter = Number(prompt("Digite um numero inteiro:"))
+
+// if(numberInter % 2 === 0 && numberInter !== 0){
+//     alert("Numero é par")
+// }else{
+//     alert("Número é impar")
+// }
+
+// EX 19
+
+// let numero = Number(prompt("Digite um número: "))
+// // IF aninhamento
+
+// if(numero % 2 === 0){
+//     if(numero > 0){
+//         alert("Par possitivo")
+//     }else{
+//         alert("Par e negativo")
+//     }
+// }else{
+//     if(numero < 0){
+//         alert(" é impar e negativo")
+//     }else{
+//         alert("Impar e possitivo")
+//     }
+// }
+
+// EX 20
+// let pergunta1 = prompt("Telefonou para a vítima?:").toLowerCase()
+// let pergunta2 = prompt("Esteve no local do crime?:").toLowerCase()
+// let pergunta3 = prompt("Mora perto da vítima?:").toLowerCase()
+// let pergunta4 = prompt("Devia para a vítima?:").toLowerCase()
+// let pergunta5 = prompt("Já trabalhou com a vítima?").toLowerCase()
+
+// let respostas_sim = 0
+
+// if (pergunta1 === "sim") {
+//     respostas_sim = respostas_sim + 1
+// } 
+// if (pergunta2 === "sim") {
+//     respostas_sim = respostas_sim + 1
+// } 
+// if (pergunta3 === "sim") {
+//     respostas_sim = respostas_sim + 1
+// } 
+// if (pergunta4 === "sim") {
+//     respostas_sim = respostas_sim + 1
+// } 
+// if (pergunta5 === "sim") {
+//     respostas_sim = respostas_sim + 1
+// }
+// if (respostas_sim<2){
+//     alert("inocente")
+// }
+// else if (respostas_sim == 2){
+//     alert("suspeita")
+// }
+// else if (respostas_sim<=4){
+//     alert("cumplice")
+// }
+// else if (respostas_sim == 5){
+//     alert("assasino")
+// }
+
+// EX 21
+// let n1 = Number(prompt("Digite um número:"))
+// let n2 = Number(prompt("Digite outro número:"))
+
+// if (n1 > n2){
+//     alert(`n1: ${n1} é o maior`)
+// }else if(n1 < n2){
+//     alert(`n2: ${n2} é o maior`)
+// }else{
+//     alert("digite um numero válido")
+// }
+
+// EX 22
+
+// let n1 = Number(prompt("Digite um número:"))
+// let n2 = Number(prompt("Digite outro número:"))
+// let n3 = Number(prompt("Digite outro número:"))
+
+// if(n1 >= n2 && n2 >= n3){
+//     alert(`n1:${n1} é o maior e o n3:${n3} é o menor`)
+// }else if(n1 >= n3 && n1 >= n2){
+//      alert(`n1:${n1} é o maior e o n2:${n2} é o menor`)
+// }else if(n2 >= n1 && n1 >= n3){
+//      alert(`n2:${n2} é o maior e o n3:${n3} é o menor`)
+// }else if(n2 >= n3 && n3 >= n1){
+//      alert(`n2:${n2} é o maior e o n1:${n1} é o menor`)
+// }else if(n3 >= n1 && n1 >= n2){
+//      alert(`n3:${n3} é o maior e o n2:${n2} é o menor`)
+// }else if(n3 >= n2 && n2 >= n1){
+//      alert(`n3:${n3} é o maior e o n1:${n1} é o menor`)
+// }else{
+//     alert("Numero invalido")
+// }
+
+// segunda opção
+// let n1 = 8
+// let n2 = 9
+// let n3 = 7
+
+// if(n1 > n2 && n1 > n3 && n2 > n3){
+//     alert(`${n1}é o maior entre eles e o ${n3} é o menor`)
+// }else if(n2 > n1 && n2 > n3 && n3 > n1){
+//     alert(`${n2}é o maior entre eles e o ${n1} é o menor`)
+// }else{
+//     alert(`${n3} é o maior entre eles e o ${n2} é o menor`)
+// }
+
+// Ex
