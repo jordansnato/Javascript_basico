@@ -400,4 +400,67 @@ Não é divisível por 100, ou
 //     alert(`${n3} é o maior entre eles e o ${n2} é o menor`)
 // }
 
-// Ex
+// Ex 23
+// let n1 = Number(prompt("Digite um nuimero:"))
+
+// if(n1 % 2 === 0){
+//     alert("o numero é par")
+// }else if(n1 % 2 !==0){
+//     alert("o numero é impar")
+// }else{
+//     alert("Numero inválido")
+// }
+
+// EX 24
+
+// let raio = Number(prompt("Qual é o raio da circuferencia: "))
+
+// let diametro = raio * 2
+// let comprimento = 2 * Math.PI * raio
+// let area = Math.PI * raio ** 2
+
+// alert(`Diâmetro: ${diametro.toFixed(2)}
+// Comprimento: ${comprimento.toFixed(2)}
+// Área: ${area.toFixed(2)}`)
+
+// EX
+// alert("Para doar sangue você tem que ter entre 18 e 67 anos")
+// let idade = Number(prompt("Qual sua idade: "))
+
+// if(idade >= 18 && idade <= 67){
+//     alert("você pode doar sangue")
+// }else{
+//     alert("você não pode doar sangue")
+// }
+
+// EX 26
+
+// let dia = Number(prompt("informe um dia:"))
+// let mes = Number(prompt("informe um mes:"))
+// let ano = Number(prompt("informe um ano:"))
+
+// if(dia >= 1 && dia <= 31){
+//     if(mes >= 1 && mes <= 12){
+//         if(ano <= 2013){
+//             alert(`${dia}/${mes}/${ano} data válida`)
+//         }else{
+//             alert("essa não uma data válida")
+//         }
+//     }
+
+// }else{
+//     alert("Isso não é uma data")
+// }
+
+// EX 27
+
+// let x = 10
+// let y = 20
+
+
+// alert(`${x}, ${y}`)
+// let temp = x
+// x = y;
+// y = temp;
+
+// alert(`${x}, ${y}`)
