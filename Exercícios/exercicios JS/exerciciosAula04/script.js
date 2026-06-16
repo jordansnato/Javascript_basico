@@ -187,7 +187,7 @@ if(salario <= 900){
     alert("valor invalido")
 }
 
-
+// 13
 // let dia = Number(prompt("Digite um numero pra saber o dia: "))
 
 // switch(dia){
@@ -244,7 +244,23 @@ if(salario <= 900){
 // }
 
 // EX 15
-// fazer em sala
+let lado1 = Number(prompt("Informe o primeiro numero:"))
+let lado2 = Number(prompt("Informe o segundo numero:"))
+let lado3 = Number(prompt("Informe o terceiro numero:"))
+
+let eTriangulo = (lado1 + lado2 > lado3) && (lado1+lado3 > lado2) && (lado2 + lado3 > lado1);
+
+if(!eTriangulo){
+    alert("os lados n formam um triangulo")
+}else{
+    if(lado1 === lado2 && lado2 === lado3){
+        alert("Equilatero");
+    }else if(lado1 === lado2 || lado1 === lado3 || lado3){
+        alert("Isósceles");
+    }else{
+        alert("Escaleno")
+    }
+}
 
 // EX 16
 // let a = Number(prompt("Digite o valor A:"))
@@ -456,8 +472,6 @@ Não é divisível por 100, ou
 // let x = 10
 // let y = 20
 
-
-// alert(`${x}, ${y}`)
 // let temp = x
 // x = y;
 // y = temp;
