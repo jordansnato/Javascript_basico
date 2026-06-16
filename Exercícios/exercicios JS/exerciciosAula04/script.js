@@ -132,7 +132,7 @@
 
 // let salario = Number(prompt("Qual seu salário:"))
 // let aumento = 0;
-// if(salario < 0){
+// if(salario <= 0){
 //     alert("Numero inválido. Digite um valor válido")
 // }
 // if(salario < 280){
@@ -150,7 +150,7 @@
 //     salarioFinal = salario + aumento
 //     alert(aumento)
 //     alert(`Seu salário era ${salario} demos 10% de aumento R$${aumento} agora seu salario final é R$${salarioFinal}`)
-// }else if(salario > 1500){
+// }else if(salario >= 1500){
 //     aumento = salario * 5 / 100
 //     salarioFinal = salario + aumento
 //     alert(aumento)
@@ -160,34 +160,33 @@
 // }
 
 // Ex 12
-// let valorHora = Number(prompt("Qual o valor da sua hora trabalhada: "))
-// let quantidadeHoras = Number(prompt("Quantidades de hora trabakhadas:"))
-// let salario = valorHora * quantidadeHoras
-// let imposto = 0
-// let salarioFinal = 0
-// let inss = salario * 10 / 100
-// let fgts = salario * 11 / 100
-// let descontoFgts = fgts - salario 
+let valorHora = Number(prompt("Qual o valor da sua hora trabalhada: "))
+let quantidadeHoras = Number(prompt("Quantidades de hora trabakhadas:"))
+let salario = valorHora * quantidadeHoras
+let imposto = 0
+let salarioFinal = 0
+let inss = salario * 10 / 100
+let fgts = salario * 11 / 100
+let descontoFgts = salario  - fgts
 
-// if(salario <= 900){
-//     alert(`seu salario é de R$${salario} e você está isento do IR`)
-// }else if(salario > 900 && salario <=1500){
-//     imposto = salario * 5 / 100
-//     salarioFinal =  salario - imposto - inss
-//     alert(`O seu salário é de R$${salarioFinal} e foi descontado o IR 10% R$${imposto} e o INSS R$${inss}(10%) e seu  FGTS foi de 11% R$${descontoFgts}`)
-// }else if(salario > 1500 && salario <= 2500){
-//     imposto = salario * 10 / 100
-//     salarioFinal = salario - imposto - inss
-//     alert(`O seu salário é de R$${salarioFinal} e foi descontado o IR 10% R$${imposto} e o INSS R$${inss}(10%)  e seu  FGTS foi de 11% R$${descontoFgts}`)
-// }else if(salario > 2500){
-//     imposto = salario * 20 / 100
-//     salarioFinal = salario - imposto - inss
-//     alert(`O seu salário é de R$${salarioFinal} e foi descontado o IR 20% R$${imposto} e o INSS R$${inss}(10%)  e seu  FGTS foi de 11% R$${descontoFgts}`)
-// }else{
-//     alert("valor invalido")
-// }
+if(salario <= 900){
+    alert(`seu salario é de R$${salario} e você está isento do IR`)
+}else if(salario > 900 && salario <=1500){
+    imposto = salario * 5 / 100
+    salarioFinal =  salario - imposto - inss
+    alert(`O seu salário é de R$${salarioFinal} e foi descontado o IR 10% R$${imposto} e o INSS R$${inss}(10%) e seu  FGTS foi de 11% R$${descontoFgts}`)
+}else if(salario > 1500 && salario <= 2500){
+    imposto = salario * 10 / 100
+    salarioFinal = salario - imposto - inss
+    alert(`O seu salário é de R$${salarioFinal} e foi descontado o IR 10% R$${imposto} e o INSS R$${inss}(10%)  e seu  FGTS foi de 11% R$${descontoFgts}`)
+}else if(salario > 2500){
+    imposto = salario * 20 / 100
+    salarioFinal = salario - imposto - inss
+    alert(`O seu salário é de R$${salarioFinal} e foi descontado o IR 20% R$${imposto} e o INSS R$${inss}(10%)  e seu  FGTS foi de 11% R$${fgts}`)
+}else{
+    alert("valor invalido")
+}
 
-// EX 12+1
 
 // let dia = Number(prompt("Digite um numero pra saber o dia: "))
 
