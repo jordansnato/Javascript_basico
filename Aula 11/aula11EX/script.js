@@ -54,6 +54,3 @@ function criarParagrafo(){
 function removerAviso(){
     document.getElementById("paragrafo").remove();
 }
-function removertudo(){
-    document.getElementsByClassName.cla("paragrafo").remove();
-}
