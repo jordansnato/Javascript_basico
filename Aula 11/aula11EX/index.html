@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo">Minha primeira página com Dom</h1>
+
+    <button onclick="alterarTitulo()">Clique aqui</button>
+
+    <button onclick="acaoalert()">Clique aqui</button>
+
+    <input type="text" name="nome" id="name" placeholder="digite seu nome...">
+
+    <button onclick="mostrarNome()">Mostar nome</button>
+    <p id="resultado"></p>
+
+    <!-- ------------------------------------------------------------------------------ -->
+
+    <h1>Verificador de idade</h1>
+
+    <input type="number" id="age" placeholder="Digite sua idade...">
+
+    <button onclick="verificadorIdade()">Verificar idade</button>
+
+    <p id="resultadoIdade"></p>
+
+    <h2>Trocando imagem</h2>
+
+    <img id="imagem" src="cris.jpg" alt="cristiano ronaldo" width="150px">
+    <button onclick="trocarImagem()">Trocar imagem</button>
+
+    <h2>Mostrar e esconder elementos</h2>
+    <p id="texto">Mensagem secreta</p>
+
+    <button onclick="esconderTexto()">Esconder</button>
+    <button onclick="mostrarTexto()">Mostrar</button>
+
+    <div id="area"></div>
+
+    <button onclick="criarParagrafo()">Crie seu paragrafo<button>
+    <button onclick="removerAviso()">Remover paragrafo</button>
+    <button onclick="removertudo()">remover tudo</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
