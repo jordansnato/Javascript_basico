@@ -101,4 +101,113 @@
 
 // DESAFIO 6
 
-let filmes
+// let filmes =[
+//     "filme 1",
+//     "filme 2",
+//     "filme 3",
+//     "filme 4",
+//     "filme 5",
+// ]
+
+// for(let i = 0; i < filmes.length; i++){
+//     console.log(filmes[i])
+// }
+
+
+//DESAFIO 7
+// let notas =[7,8,10,5]
+// let soma = 0
+
+// for(let i = 0; i < notas.length; i++){
+//     soma += notas[i]
+// } console.log(soma)
+
+// let media = soma / notas.length
+// console.log(media)
+
+//DESAFIO 9
+
+// let idades = [15, 18, 22, 13, 30]
+// let maior = idades[0]
+
+// for(let i = 1; i < idades.length; i++){
+//     if(idades[i] > maior){
+//         maior = idades[i]
+//     }
+// }console.log(maior)
+
+//DESAFIO 10
+
+// let precos = [10.50, 25.00, 8.99, 12.75]
+// let menor = precos[0]
+
+// for(let i = 1; i < precos.length; i++){
+//     if(precos[i] < menor){
+//         menor = precos[i]
+//     }
+// }console.log(menor)
+
+// Desafio 11
+
+// let jogadores = [];
+// let pontos = [];
+
+// for(let i = 0; i < 3; i++){
+//     let nome = prompt("Digite o nome");
+
+//     let pontuação = Number(prompt("Digite a pontuação:"));
+
+//     jogadores.push(nome);
+//     pontos.push(pontuação);
+// }
+
+// for(let i = 0; i < jogadores.length; i++){
+//     console.log(`${jogadores[i]} - ${pontos[i]}`)
+// }
+
+// ex 2
+
+// let idades = [15, 18, 22, 13, 30];
+// let contador = 0
+// let maiores = []
+
+// for(let i = 0; i < idades.length; i++){
+//     if(idades[i]>=18){
+//         contador ++ 
+//     }
+// }console.log(contador)
+
+// for(let i = 0; i < idades.length; i++){
+//     if(idades[i] >= 18){
+//         maiores.push(idades[i])
+//     }
+// }
+// console.log(maiores)
+
+
+// ex 3
+
+// let numeros = [2, 5, 8, 3, 10];
+// let soma = 0
+// for(let i = 0; i < numeros.length; i++){
+//     if(numeros[i] % 2 === 0){
+//         soma += numeros[i]
+//     }
+// }console.log(soma)
+
+// ex 4
+
+let idades = [15, 18, 22, 13, 30];
+let maior = 0
+let segundaMaior = 0
+
+for(let i = 0; i < idades.length; i++){
+    if(idades[i] > maior){
+        segundaMaior = maior
+        maior = idades[i]
+    }else if(idades[i] > segundaMaior ){
+        segundaMaior = idades[i]
+
+    }
+}
+console.log(segundaMaior)
