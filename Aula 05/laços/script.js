@@ -211,3 +211,4 @@ for(let i = 0; i < idades.length; i++){
     }
 }
 console.log(segundaMaior)
+

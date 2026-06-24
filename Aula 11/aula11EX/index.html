@@ -44,7 +44,27 @@
 
     <button onclick="criarParagrafo()">Crie seu paragrafo<button>
     <button onclick="removerAviso()">Remover paragrafo</button>
-    <button onclick="removertudo()">remover tudo</button>
+
+    <h2> Minha lista de tarefas</h2>
+    
+    <input type="text" id="tarefa" placeholder="Digite aqui">
+    <button onclick="listaTarefas()">Adicionar</button>
+
+    <button onclick="excluir()">Excluir</button>
+    
+    <ul id="lista"></ul>
+
+    <input type="number" id="n1" placeholder="Digite um número..">
+    <input type="number" id="n2" placeholder="Digite outro número..">
+
+    <button onclick="calculos('+')">Soma</button>
+    <button onclick="calculos('-')">Subtrair</button>
+    <button onclick="calculos('/')">Divisão</button>
+    <button onclick="calculos('*')">Multiplicação</button>
+
+    <p id="mostraResultado"></p>
+
+
 
     <script src="script.js"></script>
 </body>

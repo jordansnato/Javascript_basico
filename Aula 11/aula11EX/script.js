@@ -54,3 +54,65 @@ function criarParagrafo(){
 function removerAviso(){
     document.getElementById("paragrafo").remove();
 }
+
+let multi = 0;
+let divisao = 0;
+
+function calcularPeso(){
+    let peso = document.getElementById("peso").value;
+    let altura = document.getElementById("altura").value;
+
+    let imc = peso /(altura * altura)
+    console.log(imc)
+
+    if(imc < 18.5){
+        document.getElementById("imc").innerText = "Abaixo do peso"
+    }else if(imc >= 18.6 && imc <= 24.9){
+        document.getElementById("imc").innerText = "Peso Ideal"
+    }else if(imc >= 25 && imc <= 29.9){
+        document.getElementById("imc").innerText = "Sobrepeso"
+    }else if(imc >= 30 && imc <= 34.9){
+        document.getElementById("imc").innerText = "Obesidade Grau I"
+    }else if(imc >= 35.5 && imc <= 39.9){
+        document.getElementById("imc").innerText = "Obesidade Grau II"        
+    }else{
+        document.getElementById("imc").innerText = "Obesidade Grau III (Mórbida)"
+    }
+}
+
+function listaTarefas(){
+    let tarefas = document.getElementById("tarefa").value
+
+    let item = document.createElement("li");
+    item.innerText = tarefas;
+    item.id = "item"
+
+    document.getElementById("lista").appendChild(item)
+
+
+    document.getElementById("tarefas").value = "";    
+}
+
+function excluir(){
+    document.getElementById("item").remove();
+}
+
+function calculos(operacao){
+    let numero1 = Number(document.getElementById("n1").value);
+    let numero2 = Number(document.getElementById("n2").value);
+
+    if(operacao === "+"){
+        let soma = numero1 + numero2;
+        document.getElementById("mostraResultado").innerText = soma;
+    }else if(operacao === "-"){
+        let sub = numero1 - numero2;
+        document.getElementById("mostraResultado").innerText = sub;
+    }else if( operacao === "/"){
+        let div = numero1 / numero2;
+        document.getElementById("mostraResultado").innerText = div;
+    }else if(operacao === "*"){
+        let multi = numero1 * numero2;
+        document.getElementById("mostraResultado").innerText = multi;
+    }
+
+}
