@@ -30,9 +30,9 @@ Cada filme cadastrado deverá exibir:
 * Gênero
 * Ano de lançamento
 
-Além disso, o usuário poderá remover qualquer filme da lista.
 
----
+
+---Além disso, o usuário poderá remover qualquer filme da lista.
 
 # 📋 Requisitos
 

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #141414;
+    color: white;
+}
+
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+   background: linear-gradient(90deg, #141414, #e50914);
+    color: white;
+}
+
+.header-main nav {
+    display: flex;
+}
+
+.header-main nav a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+.header-main nav a:hover{
+    background: #d1d5db;
+     opacity:0.7;
+     color: #000000;
+     padding: 10px;
+     border-radius: 10px;
+}
