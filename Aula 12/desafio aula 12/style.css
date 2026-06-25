@@ -87,3 +87,11 @@ legend{
     background-color: #d1d5db;
     font-weight: 500;
 }
+
+footer {
+    background: #0f172a;
+    color: rgba(255, 255, 255, .7);
+    padding: 48px 40px 24px;
+    text-align: center;
+    margin-top: 60px;
+}
