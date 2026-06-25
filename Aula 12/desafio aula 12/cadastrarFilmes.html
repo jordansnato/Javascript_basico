@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <title>Cadastro filmes</title>
+</head>
+<body>
+    <header class="header-main">
+        <h1>CineFlix</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Filmes cadastrados</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form>
+                <fieldset>
+                    <h2>Cadastre o filme que deseja</h2>
+                    <input type="text" id="nomeFilme" placeholder="Digite o nome do filme" required>
+                    <input type="text" id="generoFilme" placeholder="Genero.."required>
+                    <input type="number" id="anoLancamento" placeholder="Ano do filme"required>
+                    <button type="button"  class="btn" onclick="cadastrar()">Cadastrar</button>
+                </fieldset>
+            </form>
+
+            <div id="area">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CineFlix - 2026 - sc</p>
+    </footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
