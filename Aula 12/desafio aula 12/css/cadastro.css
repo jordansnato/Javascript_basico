@@ -87,3 +87,19 @@ footer {
     width: 250px;
     height: 200px;
 }
+
+li{
+    width: 250px;
+    background: lightgray;
+    font-size: 1.2.rem;
+    color: #000000;
+    margin-top: 30px;
+    padding:10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    list-style: none;
+}
+
+span{
+    cursor: pointer;
+}

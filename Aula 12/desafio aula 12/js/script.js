@@ -1,18 +1,21 @@
 
-
 function cadastrar(){
-    let nome = document.getElementById("nomeFilme").value;
+    let filme = document.getElementById("nomeFilme").value;
     let genero = document.getElementById("generoFilme").value;
     let anoFilme = document.getElementById("anoLancamento").value;
 
-    let card = document.createElement("div");
-    card.classList.add("card");
+    let li = document.createElement("li")
+    li.innerHTML = `Nome: ${filme} | Genêro: ${genero} 
+    | Data lançamento: ${anoFilme} <span onclick= 'deletarTarefa(this)'>❌</span>` 
 
-    card.innerHTML = `
-        <h3>${nome}</h3>
-        <p><strong>Gênero:</strong> ${genero}</p>
-        <p><strong>Ano:</strong> ${anoFilme}</p>
-    `;
+    document.querySelector("ul").appendChild(li)
 
-    document.getElementById("area").appendChild(card);
+    document.getElementById("nomeFilme").value = "";
+    document.getElementById("generoFilme").value = "";
+    document.getElementById("anoLancamento").value = "";
+}
+
+function deletarTarefa(li){
+    li.parentElement.remove(li)
+
 }
