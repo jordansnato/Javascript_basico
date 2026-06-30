@@ -9,10 +9,7 @@
 <body>
     <header class="header-main">
         <h1>CineFlix</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="#">Filmes cadastrados</a>
-        </nav>
+        <button id="tema" class="btn-tema" onclick="trocarTema()">Dia</button>
     </header>
 
     <main>
@@ -27,10 +24,18 @@
                 </fieldset>
             </form>
 
+            <p id="cadastro">Filmes Cadastrados: 0</p>
+           
             <ul>
                 
             </ul>
+
         </section>
+
+
+        <footer>
+            <p>&copy; CineFlix 2026</p>
+        </footer>
     </main>
 
 <script src="./js/script.js"></script>
